@@ -1,0 +1,357 @@
+/* CSS Document */
+
+/*
+	Author: hardikforall
+*/
+
+/* ---------------------------------------- */
+/*             TABLE OF CONTENTS
+/* ---------------------------------------- */
+/*   01 - General & Basic Styles			*/
+/*   02 - Navbar							*/
+/*   03 - content							*/
+/*   04 - footer							*/
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+/*-----------General & Basic Styles------------*/
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  scroll-behavior: smooth;
+}
+* {
+  font-family: Lato; /*-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;*/
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+}
+a:hover {
+  cursor: pointer;
+  cursor: hand;
+  text-decoration: none;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+/* VARIABLES */
+:root {
+  --primary-text-color: white;
+  --dark-text-color: #1d4762;
+  --soft-dark-color: #48697e;
+  --light-blue-color: #295282;
+
+  --default-button-color: var(--primary-text-color);
+  --default-button-bg: #278e8f;
+  --default-button-radius: 2px;
+
+  --nav-item-color: var(--primary-text-color);
+
+  --text-field-radius: 5px;
+  --text-field-color: black;
+  --text-field-bg: #e7e7e7;
+}
+.dots-home {
+  position: absolute;
+  top: 120px;
+  left: -150px;
+}
+
+.container {
+  position: relative;
+}
+
+.default-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  border-radius: var(--default-button-radius);
+  background: var(--default-button-bg);
+  color: var(--default-button-color);
+  text-decoration: none;
+  border: none;
+  padding: 0 1.2rem;
+  max-width: max-content;
+}
+
+.default-button:hover {
+  filter: brightness(85%);
+  color: var(--default-button-color);
+  text-decoration: none;
+}
+
+.home-page {
+  background: linear-gradient(
+    263.33deg,
+    #2a5383 19.57%,
+    #236b85 39.41%,
+    #2a5383 59.55%,
+    #294099 78.22%,
+    #2d278f 96.9%
+  );
+}
+
+.home-page .content-wrapper {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* navbar */
+.navbar {
+  margin-top: 30px;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  padding: 10px 0 0 0;
+}
+
+.navbar-nav li {
+  padding: 0 1.5rem;
+}
+
+.navbar-nav li a {
+  font-size: 18px;
+  color: var(--nav-item-color);
+  text-transform: uppercase;
+}
+
+/* home-content */
+
+.home-title {
+  font-family: "League Spartan", sans-serif;
+  font-size: 60px;
+  margin: 0;
+  color: var(--primary-text-color);
+}
+
+.home-subtitle {
+  color: var(--primary-text-color);
+  font-family: "League Spartan", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.field-wrapper {
+  margin-top: 60px;
+  width: 100%;
+}
+
+.input-wrapper {
+  position: relative;
+  max-width: 100%;
+  margin-top: 10px;
+  font-family: "Lato", sans-serif;
+}
+
+.input-wrapper input {
+  width: 100%;
+  height: 55px;
+  padding: 10px 20px;
+  border-radius: var(--text-field-radius);
+  background: var(--text-field-bg);
+  font-size: 18px;
+  border: none;
+}
+
+.input-wrapper button {
+  position: absolute;
+  height: 40px;
+  width: 100px;
+  font-size: 15px;
+  right: 8px;
+  top: 8px;
+}
+
+.field-label {
+  color: var(--primary-text-color);
+}
+
+/* common styles */
+.content-wrapper {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.page-content {
+  display: flex;
+  padding: 15% 0 10% 0;
+  min-width: 280px;
+}
+
+.page-title {
+  font-family: "League Spartan", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  color: var(--primary-text-color);
+}
+
+.page-subtitle {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.dark-text {
+  color: var(--dark-text-color);
+}
+
+.soft-dark-text {
+  color: var(--soft-dark-color);
+}
+
+.light-blue {
+  color: var(--light-blue-color);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.centered {
+  justify-content: center;
+  align-items: center;
+}
+
+.page {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* intructions content */
+.card-pattern {
+  height: 350px;
+}
+.instructions-list {
+  list-style-type: none;
+  margin: 25px 0 0 0;
+  padding: 0 0 0 10px;
+}
+
+.instructions-list li {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+.instructions-list li span {
+  font-size: 20px;
+  font-family: "League Spartan", sans-serif;
+  line-height: 20px;
+}
+.instructions-list li .instructions-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.instructions-result {
+  margin-top: 30px;
+}
+.instructions-result,
+.instructions-result span {
+  font-size: 2.5rem !important;
+  max-width: 55ch;
+}
+
+.back-home-btn {
+  margin-top: 40px;
+  height: 45px;
+  font-size: 20px;
+}
+
+/* faq page */
+.faq-dots {
+  position: absolute;
+  top: 0;
+  right: -100px;
+}
+.faq-page {
+  background: linear-gradient(180deg, #2b2d91 0%, #295282 108.04%);
+}
+
+.faq-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  margin-top: 60px;
+}
+.faq-card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 30%;
+  background: white;
+  border-radius: var(--default-button-radius);
+  padding: 30px 25px;
+  z-index: 2;
+}
+
+.faq-card span {
+  font-size: 20px;
+}
+
+/* footer-page */
+.footer-dots {
+  position: absolute;
+  right: -80px;
+  top: 0;
+}
+.footer-page {
+  padding: 0 10px;
+}
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 10% 0;
+}
+
+.contact-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-title {
+  font-size: 30px;
+}
+
+.contact-info {
+  font-size: 20px;
+}
+
+.footer-rights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: #b3b3b3;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+  .faq-card {
+    width: 100%;
+  }
+
+  .instructions-list li {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .card-pattern,
+  .faq-dots,
+  .footer-dots,
+  .dots-home {
+    display: none;
+  }
+}

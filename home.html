@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6426474639716247"
+      crossorigin="anonymous"
+    ></script>
+    <title>Consulta Operadora - Saiba qual a operadora do celular</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="description"
+      content="Pesquise, busque e saiba a operadora atual do celular antes de ligar."
+    />
+    <meta
+      name="keywords"
+      content="operadora, celular, móvel, fixo, saber operadora, qual a operadora, descobrir operadora de celular, como saber a operadora do celular, pesquisar operadora, ver operadora"
+    />
+
+    <!-- Resources -->
+    <link rel="icon" href="../static/assets/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+
+    <!-- External Dependencies -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=League+Spartan:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-234687444-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag("js", new Date());
+
+      gtag("config", "UA-234687444-1");
+    </script>
+  </head>
+  <body>
+    <main class="home-page page" id="home">
+      <div class="container">
+        <img src="./static/assets/dots-pattern.png" class="dots-home" />
+        <nav class="navbar no-mrg">
+          <div class="container">
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a
+                title="Consultas Massivas WhatsApp"
+                class="default-button"
+                href="https://bit.ly/3BuYAHg"
+                role="button"
+              >
+                <span> CONSULTAS EM LOTES </span>
+              </a>
+            </div>
+
+            <div
+              class="collapse navbar-collapse"
+              id="bs-example-navbar-collapse-1"
+            >
+              <ul class="navbar-nav navbar-right">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#how-to">Como utilizar</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contato</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="page-content centered">
+          <form
+            action="{{ url_for('get_operadora') }}"
+            method="post"
+            class="content-wrapper align-center"
+          >
+            <h1 class="home-title">Consulta Operadora</h1>
+            <span class="home-subtitle"
+              >Descubra a operadora do seu telefone</span
+            >
+            <div class="field-wrapper">
+              <span class="field-label">Informe um Telefone Válido</span>
+              <div class="input-wrapper">
+                <input
+                  placeholder="(99) 9999-9999"
+                  type="text"
+                  id="telephone"
+                  name="telephone"
+                  class="telephone-input"
+                  value=""
+                />
+                <button class="default-button" type="submit">Consultar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <main class="page" id="how-to">
+      <div class="container">
+        <div class="page-content">
+          <div class="content-wrapper">
+            <h2 class="page-title dark-text">Como Utilizar</h2>
+            <span class="page-subtitle soft-dark-text"
+              >Passo-a-passo para realizar uma consulta no site</span
+            >
+
+            <ul class="instructions-list soft-dark-text">
+              <li>
+                <span class="instructions-title dark-text"> 1º Passo: </span>
+                <span>Tenha em mãos o número que deseja consultar.</span>
+              </li>
+              <li>
+                <span class="instructions-title dark-text"> 2º Passo: </span>
+                <span>Insira o número fixo/móvel no campo de texto acima</span>
+              </li>
+              <li>
+                <span class="instructions-title dark-text"> 3º Passo: </span>
+                <span>
+                  Clique no botão <strong>Consultar</strong> acima e aguarde a
+                  consulta ser realizada
+                </span>
+              </li>
+              <li>
+                <span class="instructions-result light-blue">
+                  <span class="bold">Pronto!</span>
+                  O resultado aparecerá logo abaixo do campo textual com as
+                  informações da operadora
+                </span>
+              </li>
+            </ul>
+            <a
+              title="Consultas Massivas WhatsApp"
+              class="default-button back-home-btn"
+              href="#home"
+              role="button"
+            >
+              <span> REALIZAR CONSULTA </span>
+            </a>
+          </div>
+          <img src="./static/assets/card-pattern.png" class="card-pattern" />
+        </div>
+      </div>
+    </main>
+
+    <main class="faq-page page">
+      <div class="container">
+        <img src="./static/assets/faq-dots.png" class="faq-dots" />
+        <div class="page-content">
+          <div class="content-wrapper" id="faq">
+            <h2 class="page-title">FAQ</h2>
+            <span class="page-subtitle">Perguntas Frequentes</span>
+
+            <div class="faq-card-container">
+              <div class="faq-card">
+                <span class="dark-text bold"
+                  >Eu inseri o telefone e retornou um erro, o que pode
+                  ser?</span
+                >
+                <span class="light-blue"
+                  >Se isso acontecer, significa que não possuímos a informação
+                  atualizada do número de telefone pesquisado.</span
+                >
+              </div>
+              <div class="faq-card">
+                <span class="dark-text bold"
+                  >Estou sendo bloqueado pela quantidade de consultas, estou
+                  fazendo algo errado?</span
+                >
+                <span class="light-blue"
+                  >Não! mas utilizamos um limitador de consultas para evitar
+                  sobrecarga em nossos servidores.</span
+                >
+              </div>
+              <div class="faq-card">
+                <span class="dark-text bold"
+                  >Clico no botão de consultar e nada acontece, por quê?</span
+                >
+                <span class="light-blue"
+                  >Se isso acontecer, provavelmente o site estará passando por
+                  alguma manutenção, basta aguardar alguns minutos e tentar
+                  novamente</span
+                >
+              </div>
+              <div class="faq-card">
+                <span class="dark-text bold"
+                  >Clico no botão de consultar e nada acontece, por quê?</span
+                >
+                <span class="light-blue"
+                  >Se isso acontecer, provavelmente o site estará passando por
+                  alguma manutenção, basta aguardar alguns minutos e tentar
+                  novamente</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer-page" id="contact">
+      <div class="container">
+        <img src="./static/assets/footer-dots.png" class="footer-dots" />
+        <div class="contact-row">
+          <div class="contact-col">
+            <span class="dark-text bold contact-title">Sobre nós</span>
+            <p class="light-blue contact-info">
+              Somos uma empresa especializada em comer o cu de quem esta lendo!
+            </p>
+          </div>
+          <div class="contact-col">
+            <span class="dark-text bold contact-title">Contato</span>
+            <span class="light-blue contact-info">
+              E-mail: atendimento@fafalabs.com.br
+            </span>
+            <span class="contact-info">
+              <a href="https://bit.ly/3BuYAHg">WhatsApp: (51) 9761-2019</a>
+            </span>
+          </div>
+        </div>
+        <div class="footer-rights">
+          <span>
+            © 2022 <a href="#"> Consulta Operadora </a>, Todos os direitos
+            reservados.
+          </span>
+          <span class="footer-dev dark-text"
+            >Desenvolvido por
+            <a href="https://www.linkedin.com/in/smolskig/"
+              >Gabriel Smolski</a
+            ></span
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="../static/js/scripts.js"></script>
+  </body>
+</html>
